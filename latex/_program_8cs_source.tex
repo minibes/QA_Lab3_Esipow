@@ -1,0 +1,114 @@
+\doxysection{Program.\+cs}
+\label{_program_8cs_source}\index{C:/Users/vasja/source/repos/Test\_3/Test\_3/Program.cs@{C:/Users/vasja/source/repos/Test\_3/Test\_3/Program.cs}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{keyword}{namespace\ }Test\_3}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{class\ }Coord\_point}
+\DoxyCodeLine{00010\ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{double}\ \_\_grad\ =\ 0;\textcolor{comment}{//\ градусы}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{double}\ \_\_min\ =\ 0;\textcolor{comment}{//\ минуты\ }}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{double}\ \_\_sec\ =\ 0;\textcolor{comment}{//\ секунды}}
+\DoxyCodeLine{00020\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Init(\textcolor{keywordtype}{double}\ grad,\ \textcolor{keywordtype}{double}\ min,\ \textcolor{keywordtype}{double}\ sec)}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ this.\_\_grad\ =\ grad;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ this.\_\_min\ =\ min;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ this.\_\_sec\ =\ sec;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Coord\_point(\textcolor{keywordtype}{double}\ grad1,\ \textcolor{keywordtype}{double}\ min1,\ \textcolor{keywordtype}{double}\ sec1)}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \_\_grad\ =\ grad1;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \_\_min\ =\ min1;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \_\_sec\ =\ sec1;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ Rounding()}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_\_sec\ >=\ 30\ \&\&\ \_\_sec\ <=\ 60)}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_min\ =\ \_\_min\ +\ 1;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_sec\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\_\_sec\ >=\ 90)}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_min\ =\ \_\_min\ +\ 2;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_sec\ =\ 0;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_\_min\ >=\ 30\ \&\&\ \_\_min\ <=\ 60)}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_grad\ =\ \_\_grad\ +\ 1;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_min\ =\ 0;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\_\_min\ >=\ 90)}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_grad\ =\ \_\_grad\ +\ 2;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_min\ =\ 0;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Display()}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}Градусы\ =\ \{0\},\ Минуты\ =\ \{1\},\ Секунды\ =\ \{2\}"{}},\ \_\_grad,\ \_\_min,\ \_\_sec);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{class\ }longitude\ :\ Coord\_point\ \textcolor{comment}{//\ наследование\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00075\ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{comment}{//a.\ В\ производном\ классе\ добавляется\ указанное\ поле\ private.}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{float}\ L;\textcolor{comment}{//\ долгота}}
+\DoxyCodeLine{00081\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ longitude(\textcolor{keywordtype}{double}\ grad1,\ \textcolor{keywordtype}{double}\ min1,\ \textcolor{keywordtype}{double}\ sec1,\ \textcolor{keywordtype}{float}\ lon1)\ :\ base(grad1,\ min1,\ sec1)}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ L\ =\ lon1;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Init(\textcolor{keywordtype}{double}\ grad,\ \textcolor{keywordtype}{double}\ min,\ \textcolor{keywordtype}{double}\ sec,\ \textcolor{keywordtype}{float}\ lon)\textcolor{comment}{//d.\ Выполняется\ перегрузка\ функций\ Init,\ Display\ для\ производного\ класса\ с\ вызовом\ функции\ базового\ класса.}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ base.Init(grad,\ min,\ sec);}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ L\ =\ lon;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Rounding()\textcolor{comment}{//c.\ Метод\ базового\ класса\ перегружается\ для\ производного\ с\ учетом\ нового\ поля,\ при\ этом\ базовый\ \ метод\ не\ вызывается,\ а\ доступ\ к\ полям\ базового\ класса\ обеспечивает\ \ модификатор\ protected.}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_\_sec\ >=\ 30\ \&\&\ \_\_sec\ <=\ 60)}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_min\ =\ \_\_min\ +\ 1;}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_sec\ =\ 0;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\_\_sec\ >=\ 90)}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_min\ =\ \_\_min\ +\ 2;}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_sec\ =\ 0;}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_\_min\ >=\ 30\ \&\&\ \_\_min\ <=\ 60)}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_grad\ =\ \_\_grad\ +\ 1;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_min\ =\ 0;}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\_\_min\ >=\ 90)}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_grad\ =\ \_\_grad\ +\ 2;}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_min\ =\ 0;}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (L\ <\ 0)}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_grad\ =\ \_\_grad\ *\ L;}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Display()\textcolor{comment}{//d.\ Выполняется\ перегрузка\ функций\ Init,\ Display\ для\ производного\ класса\ с\ вызовом\ функции\ базового\ класса.}}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ base.Display();}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}Lon=\ \{0\}"{}},\ L);}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00135\ \ \ \ \ \}}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keyword}{class\ }Program}
+\DoxyCodeLine{00141\ \ \ \ \ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ Main(\textcolor{keywordtype}{string}[]\ args)}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ longitude\ ll\ =\ \textcolor{keyword}{new}\ longitude(1,\ 1,\ 1,\ -\/1);\textcolor{comment}{//e.\ В\ базовом\ и\ производном\ классах\ создать\ конструкторы\ с\ параметрами.Продемонстрировать\ в\ конструкторе\ производного\ класса\ с\ параметрами\ вызов\ конструктора\ базового\ класса.}}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ ll.Display();}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ ll.Init(1,\ 40,\ 30,\ -\/1);}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ ll.Rounding();}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ ll.Display();}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \}}
+\DoxyCodeLine{00151\ \}}
+\DoxyCodeLine{00152\ }
+
+\end{DoxyCode}

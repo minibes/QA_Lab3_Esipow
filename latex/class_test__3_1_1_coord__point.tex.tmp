@@ -1,0 +1,147 @@
+\hypertarget{class_test__3_1_1_coord__point}{}\doxysection{Test\+\_\+3.\+Coord\+\_\+point Class Reference}
+\label{class_test__3_1_1_coord__point}\index{Test\_3.Coord\_point@{Test\_3.Coord\_point}}
+
+
+$<$brief$>$Базовый класс \char`\"{}Координаты точки\char`\"{}$<$/brief$>$ Данный класс нужен для хранения и обработки информации об одной точке  
+
+
+
+
+Inheritance diagram for Test\+\_\+3.\+Coord\+\_\+point\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_test__3_1_1_coord__point_a8fa97c8c7ee83824d6210fdcc65cc88c}{Init}} (double grad, double min, double sec)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Coord\+\_\+point, инициализирующий переменные \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_test__3_1_1_coord__point_ae2dd41f3522232bb0ef836f78ba9742f}{Coord\+\_\+point}} (double grad1, double min1, double sec1)
+\begin{DoxyCompactList}\small\item\em $<$brief$>$Базовый объекты класса \char`\"{}Координаты точки\char`\"{}$<$/brief$>$ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_test__3_1_1_coord__point_adb254ea458dc7af9401d42f0a8af6b21}{Rounding}} ()
+\begin{DoxyCompactList}\small\item\em Округляет полученные значения до градусов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test__3_1_1_coord__point_a2571841f3b2f389f4cdbf7e4a2aa0b02}{Display}} ()
+\begin{DoxyCompactList}\small\item\em Отображает координаты точки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_test__3_1_1_coord__point_a793332eae87b3e725497d86b4561e755}{\+\_\+\+\_\+grad}} = 0
+\item 
+double \mbox{\hyperlink{class_test__3_1_1_coord__point_a78be2df127cdd2dd8e8d519213273cf0}{\+\_\+\+\_\+min}} = 0
+\item 
+double \mbox{\hyperlink{class_test__3_1_1_coord__point_ae25205312734a4f9ea7095d357ba4567}{\+\_\+\+\_\+sec}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+$<$brief$>$Базовый класс \char`\"{}Координаты точки\char`\"{}$<$/brief$>$ Данный класс нужен для хранения и обработки информации об одной точке 
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00009}{9}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_test__3_1_1_coord__point_ae2dd41f3522232bb0ef836f78ba9742f}\label{class_test__3_1_1_coord__point_ae2dd41f3522232bb0ef836f78ba9742f}} 
+\index{Test\_3.Coord\_point@{Test\_3.Coord\_point}!Coord\_point@{Coord\_point}}
+\index{Coord\_point@{Coord\_point}!Test\_3.Coord\_point@{Test\_3.Coord\_point}}
+\doxysubsubsection{\texorpdfstring{Coord\_point()}{Coord\_point()}}
+{\footnotesize\ttfamily Test\+\_\+3.\+Coord\+\_\+point.\+Coord\+\_\+point (\begin{DoxyParamCaption}\item[{double}]{grad1,  }\item[{double}]{min1,  }\item[{double}]{sec1 }\end{DoxyParamCaption})}
+
+
+
+$<$brief$>$Базовый объекты класса \char`\"{}Координаты точки\char`\"{}$<$/brief$>$ 
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00029}{29}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_test__3_1_1_coord__point_a2571841f3b2f389f4cdbf7e4a2aa0b02}\label{class_test__3_1_1_coord__point_a2571841f3b2f389f4cdbf7e4a2aa0b02}} 
+\index{Test\_3.Coord\_point@{Test\_3.Coord\_point}!Display@{Display}}
+\index{Display@{Display}!Test\_3.Coord\_point@{Test\_3.Coord\_point}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void Test\+\_\+3.\+Coord\+\_\+point.\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Отображает координаты точки 
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00065}{65}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+\mbox{\Hypertarget{class_test__3_1_1_coord__point_a8fa97c8c7ee83824d6210fdcc65cc88c}\label{class_test__3_1_1_coord__point_a8fa97c8c7ee83824d6210fdcc65cc88c}} 
+\index{Test\_3.Coord\_point@{Test\_3.Coord\_point}!Init@{Init}}
+\index{Init@{Init}!Test\_3.Coord\_point@{Test\_3.Coord\_point}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Test\+\_\+3.\+Coord\+\_\+point.\+Init (\begin{DoxyParamCaption}\item[{double}]{grad,  }\item[{double}]{min,  }\item[{double}]{sec }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Coord\+\_\+point, инициализирующий переменные 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+grad} & градусы\\
+\hline
+{\em \+\_\+\+\_\+min} & минуты\\
+\hline
+{\em \+\_\+\+\_\+sec} & секунды\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00020}{20}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+\mbox{\Hypertarget{class_test__3_1_1_coord__point_adb254ea458dc7af9401d42f0a8af6b21}\label{class_test__3_1_1_coord__point_adb254ea458dc7af9401d42f0a8af6b21}} 
+\index{Test\_3.Coord\_point@{Test\_3.Coord\_point}!Rounding@{Rounding}}
+\index{Rounding@{Rounding}!Test\_3.Coord\_point@{Test\_3.Coord\_point}}
+\doxysubsubsection{\texorpdfstring{Rounding()}{Rounding()}}
+{\footnotesize\ttfamily int Test\+\_\+3.\+Coord\+\_\+point.\+Rounding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Округляет полученные значения до градусов 
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00038}{38}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_test__3_1_1_coord__point_a793332eae87b3e725497d86b4561e755}\label{class_test__3_1_1_coord__point_a793332eae87b3e725497d86b4561e755}} 
+\index{Test\_3.Coord\_point@{Test\_3.Coord\_point}!\_\_grad@{\_\_grad}}
+\index{\_\_grad@{\_\_grad}!Test\_3.Coord\_point@{Test\_3.Coord\_point}}
+\doxysubsubsection{\texorpdfstring{\_\_grad}{\_\_grad}}
+{\footnotesize\ttfamily double Test\+\_\+3.\+Coord\+\_\+point.\+\_\+\+\_\+grad = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00011}{11}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+\mbox{\Hypertarget{class_test__3_1_1_coord__point_a78be2df127cdd2dd8e8d519213273cf0}\label{class_test__3_1_1_coord__point_a78be2df127cdd2dd8e8d519213273cf0}} 
+\index{Test\_3.Coord\_point@{Test\_3.Coord\_point}!\_\_min@{\_\_min}}
+\index{\_\_min@{\_\_min}!Test\_3.Coord\_point@{Test\_3.Coord\_point}}
+\doxysubsubsection{\texorpdfstring{\_\_min}{\_\_min}}
+{\footnotesize\ttfamily double Test\+\_\+3.\+Coord\+\_\+point.\+\_\+\+\_\+min = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00012}{12}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+\mbox{\Hypertarget{class_test__3_1_1_coord__point_ae25205312734a4f9ea7095d357ba4567}\label{class_test__3_1_1_coord__point_ae25205312734a4f9ea7095d357ba4567}} 
+\index{Test\_3.Coord\_point@{Test\_3.Coord\_point}!\_\_sec@{\_\_sec}}
+\index{\_\_sec@{\_\_sec}!Test\_3.Coord\_point@{Test\_3.Coord\_point}}
+\doxysubsubsection{\texorpdfstring{\_\_sec}{\_\_sec}}
+{\footnotesize\ttfamily double Test\+\_\+3.\+Coord\+\_\+point.\+\_\+\+\_\+sec = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vasja/source/repos/\+Test\+\_\+3/\+Test\+\_\+3/\mbox{\hyperlink{_program_8cs}{Program.\+cs}}\end{DoxyCompactItemize}
